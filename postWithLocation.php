@@ -1,5 +1,11 @@
 <?php
+/////// configer the file
+require "init_new_config.php";
 
+
+////// this is post method api intrigration
+$user = isset($_GET['id_user_name']) ? mysqli_real_escape_string($con, $_GET['id_user_name']) : "";
+$page1=  isset($_GET['page']) ? $_GET['page'] : '';
 //////// first findout the Country Latitude Longitue which was store in database 
 //////// when user login into a system
 
